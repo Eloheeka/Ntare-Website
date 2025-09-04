@@ -1,1 +1,9 @@
+/* Global text color */
+body, html, #root {
+  color: #d4af37;
+}
+
+/* Ensure links inherit and hover lighter */
+a { color: inherit; }
+a:hover { color: #f4d03f; }
 
