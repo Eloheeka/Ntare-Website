@@ -29,6 +29,7 @@ const Books = () => {
   return (
     <div className="books-page">
       <div className="books-container">
+        <p className="intro">A fearless revolutionary thinker and writer, MUKAMA NTARE a.k.a MUKAMA WANJYE ignites minds and challenge the status quo. His words break barriers, awaken consciousness, and inspires change. He doen’t follow trends—he creates movements, shaping ideas that transform the world.</p>
         <div className="book-card">
           <div className="book-image">
             <img src={bookCover} alt="Book Cover" className="book-cover" />

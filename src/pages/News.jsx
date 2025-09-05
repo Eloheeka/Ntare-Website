@@ -9,7 +9,7 @@ function News() {
 
         {/* Welcome Section */}
         <div className="news-content">
-          <h2 className="section-title">📰 Welcome to Our News Section</h2>
+          <h2 className="section-title">🎊 Welcome to Our News Section</h2>
           <p>
             We're excited to have you here! This is where you'll find the latest updates, announcements, behind-the-scenes insights, and everything new happening with us.
           </p>

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Contact.css";
 
+
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -33,7 +34,7 @@ const Contact = () => {
             <h2 className="section-title">Contact Information</h2>
             
             <div className="info-item">
-              <div className="info-icon">📧</div>
+              <div className="info-icon"><i className="fa-solid fa-envelope"></i></div>
               <div className="info-content">
                 <h3>Email</h3>
                 <p>ntaretheauthor@gmail.com</p>
@@ -41,7 +42,7 @@ const Contact = () => {
             </div>
             
             <div className="info-item">
-              <div className="info-icon">📱</div>
+              <div className="info-icon"><i className="fa-solid fa-phone"></i></div>
               <div className="info-content">
                 <h3>Phone</h3>
                 <p>+250 785 752 244</p>
@@ -49,7 +50,7 @@ const Contact = () => {
             </div>
             
             <div className="info-item">
-              <div className="info-icon">📍</div>
+              <div className="info-icon"><i className="fa-solid fa-location-dot"></i></div>
               <div className="info-content">
                 <h3>Location</h3>
                 <p>East Africa</p>
@@ -57,7 +58,7 @@ const Contact = () => {
             </div>
             
             <div className="info-item">
-              <div className="info-icon">⏰</div>
+              <div className="info-icon"><i className="fa-solid fa-clock"></i></div>
               <div className="info-content">
                 <h3>Working Hours</h3>
                 <p>Monday - Friday: 9:00 AM - 6:00 PM</p>

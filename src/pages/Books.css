@@ -588,6 +588,7 @@
   }
   
   .book-cover {
+    /* margin-top:200px; */
     width: 250px;
     height: 350px;
   }
@@ -713,4 +714,19 @@
   .store-buttons {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+}
+
+.intro{
+  text-align: center;
+  color: #d4af37;
+  font-size:1rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  background: linear-gradient(45deg, #d4af37, #f4d03f, #d4af37);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradientShift 3s ease-in-out infinite;
+
 }

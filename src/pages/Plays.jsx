@@ -5,7 +5,7 @@ import playPoster from "../assets/play.jpg"; // Example play poster image
 const Plays = () => (
   <div className="plays-page">
     <div className="plays-container">
-      
+      <p className="intro">MUKAMA NTARE a.k.a MUKAMA WANJYE or SOULJAH is a Playwright who illuminates the human experience through stories that linger long after the curtain falls. His characters breathe, his narratives provoke, and every scene is crafted to awaken thought, stir emotion, and leave audiences reflecting on the world and themselves. Through the art of drama, he tells stories that truly resonate.</p>
       <div className="play-card">
         <div className="play-image">
           <img

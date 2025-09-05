@@ -244,3 +244,18 @@
     line-height: 40px;
   }
 } 
+
+.intro{
+  text-align: center;
+  color: #d4af37;
+  font-size:1rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  background: linear-gradient(45deg, #d4af37, #f4d03f, #d4af37);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradientShift 3s ease-in-out infinite;
+  margin-bottom: 70px;
+}

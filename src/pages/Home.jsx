@@ -1,17 +1,17 @@
 // src/pages/Home.jsx
 import React, { useEffect, useState } from "react";
 import "./Home.css";
-import homeImage from "../assets/home1.jpg";
-import image1 from "../assets/home2.jpg";
-import image2 from "../assets/home3.jpg"; 
+import homeImage from "../assets/home1.png";
+import image1 from "../assets/1.png";
+import image2 from "../assets/2.png"; 
  // Single home image
 
 
 const Home = () => {
   const slides = [
-    homeImage,
-    image1,
     image2,
+    image1,
+    homeImage
    
   ];
 
@@ -20,7 +20,7 @@ const Home = () => {
   useEffect(() => {
     const id = setInterval(() => {
       setCurrent((prev) => (prev + 1) % slides.length);
-    }, 5000);
+    }, 2500);
     
     return () => clearInterval(id);
   }, [slides.length]);
@@ -42,25 +42,10 @@ const Home = () => {
           <div className="hero-text">
             
             <div className="hero-line"></div>
-            <p className="hero-subtitle">Author | Film director | Journalist</p>
+            {/* <p className="hero-subtitle">Author | Film director | Journalist</p> */}
           </div>
         </div>
       </div>
-      
-      <footer className="home-footer">
-        <div className="social-icons">
-          <a href="https://www.instagram.com/mukamawanjye" target="_blank" rel="noopener noreferrer" className="social-icon">
-            <i className="fab fa-instagram"></i>
-          </a>
-          <a href="https://www.facebook.com/Mukama%20Souljah%20Wanjye" target="_blank" rel="noopener noreferrer" className="social-icon">
-            <i className="fab fa-facebook"></i>
-          </a>
-          <a href="https://www.youtube.com/@mamalandt.v1810" target="_blank" rel="noopener noreferrer" className="social-icon">
-            <i className="fab fa-youtube"></i>
-          </a>
-        </div>
-        <p className="copyright">© 2025 Mukama Ntare</p>
-      </footer>
     </div>
   );
 };

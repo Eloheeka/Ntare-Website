@@ -43,6 +43,7 @@ const Tvshows = () => {
   return (
     <div className="tvshows-page">
       <div className="tvshows-container">
+        <p className="intro">MUKAMA NTARE, also known as MUKAMA WANJYE or SOULJAH, is a charismatic TV personality and the host of The MUKAMA Show. With his lively presence and authentic style, he brings together practitioners from film, theatre, music, culture, sports, and entrepreneurship to share their journeys and inspire audiences. His show isn’t just about conversation, it’s about celebrating talent, ideas, and stories that connect people from all walks of life.</p>
         
         <div className="videos-grid">
           {videos.map((video) => (

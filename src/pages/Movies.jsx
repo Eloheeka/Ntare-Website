@@ -43,7 +43,7 @@ const Movies = () => {
   return (
     <div className="movies-page">
       <div className="movies-container">
-        <h1 className="page-title">Our Movies</h1>
+        <p className = "intro" >MUKAMA NTARE a k.a NUKAMA WANJYE or SOULJAH  is a passionate filmmaker — Producer, Director, Screenwriter, and Actor — dedicated to bringing compelling stories to life. Through every role, he strives to create films that inspire, move, and resonate with audiences long after the credits roll.</p>
 
         {/* Categories Section */}
         <div className="movie-categories">
@@ -62,7 +62,7 @@ const Movies = () => {
 
         {/* Movies Listing */}
         {filteredMovies.length === 0 ? (
-          <p className="no-movies">Coming Soon</p>
+          <p className="no-movies">Coming Soon...</p>
         ) : (
           filteredMovies.map((movie) =>
             movie.poster ? (

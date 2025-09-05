@@ -29,7 +29,7 @@ const About = () => {
           <div className="profile-info">
             
             <p className="profile-bio">
-MUKAMA NTARE a.k.a MUKAMA WANJYE a.k.a SOULJAH is a devoted Pan-Africanist, writer, filmmaker, and activist known for using art and storytelling to inspire Black consciousness and unity. As founder of the Black Awakening Movement (BAM), he blends creativity with advocacy—challenging injustice and honoring the legacy of Black freedom fighters worldwide          </p>
+MUKAMA NTARE a.k.a MUKAMA WANJYE or SOULJAH is a devoted Pan-Africanist, writer, filmmaker, and activist known for using art and storytelling to inspire Black consciousness and unity. As founder of the Black Awakening Movement (BAM), he blends creativity with advocacy—challenging injustice and honoring the legacy of Black freedom fighters worldwide          </p>
             <button className="contact-btn" onClick={handleContactClick}>Contact</button>
           </div>
         </div>
