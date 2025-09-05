@@ -1,53 +1,102 @@
-.news-section {
-  max-width: 700px;
-  margin: 40px auto;
-  padding: 20px;
+/* News Page Styles - consistent with site theme */
+
+.news-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.news-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.page-title {
+  font-size: 2.5rem;
+  color: #d4af37;
   text-align: center;
-  color: white;
-  background-color: #1e1e2f;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-}
-
-.news-item {
-  margin-bottom: 30px;
-  padding: 20px;
-  background: #292943;
-  border-radius: 10px;
-  text-align: left;
-}
-
-.first-news {
-  text-align: center;
-}
-
-.news-title {
-  font-size: 1.6rem;
-  margin-bottom: 10px;
-  cursor: pointer;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.clickable {
-  cursor: pointer;
-}
-
-.news-date {
-  font-size: 0.9rem;
-  color: #bbb;
-  margin-bottom: 10px;
-}
-
-.toggle {
-  font-size: 1.4rem;
-  color: #ffcc00;
+  margin-bottom: 2rem;
+  font-weight: bold;
+  background: linear-gradient(45deg, #d4af37, #f4d03f, #d4af37);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradientShift 3s ease-in-out infinite, fadeInUp 0.6s ease-out 0.2s forwards;
+  opacity: 0;
 }
 
 .news-content {
-  margin-top: 10px;
-  line-height: 1.6;
+  max-width: 900px;
+  margin: 0 auto 3rem auto;
+  color: #d4af37;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.section-title {
+  font-size: 1.8rem;
+  color: #d4af37;
+  margin-bottom: 1.5rem;
+  opacity: 0;
+  animation: fadeInUp 0.6s ease-out 0.4s forwards;
+}
+
+.news-content p {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 0.6s ease-out forwards;
+  margin-bottom: 1rem;
+}
+
+.news-section {
+  max-width: 900px;
+  margin: 0 auto;
+  color: #d4af37;
+  opacity: 0;
+  animation: fadeInUp 0.6s ease-out 0.8s forwards;
+}
+
+.section-subtitle {
+  font-size: 1.5rem;
+  color: #d4af37;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid rgba(212, 175, 55, 0.3);
+  padding-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.news-item {
+  background: rgba(212, 175, 55, 0.05);
+  border: 1px solid rgba(212, 175, 55, 0.2);
+  border-radius: 12px;
+  padding: 2rem;
+  margin-top: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.news-item:hover {
+  background: rgba(212, 175, 55, 0.08);
+  border-color: rgba(212, 175, 55, 0.4);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(212, 175, 55, 0.1);
+}
+
+.news-title {
+  font-size: 1.4rem;
+  color: #f4d03f;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.news-date {
+  font-size: 1rem;
+  color: #d4af37;
+  margin-bottom: 1rem;
+  font-style: italic;
+  opacity: 0.9;
 }
 
 .news-content a {
@@ -59,30 +108,62 @@
   text-decoration: underline;
 }
 
-/* Footer */
+/* Footer (reuse global styles if any) */
 .footer {
-  margin-top: 30px;
-  padding-top: 15px;
-  border-top: 1px solid #444;
+  padding: 3rem 2rem;
   text-align: center;
 }
 
 .social-icons {
-  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
 }
 
 .social-icon {
-  margin: 0 10px;
-  color: #ffcc00;
-  font-size: 1.6rem;
-  transition: color 0.3s;
+  font-size: 1.8rem;
+  color: #d4af37;
+  text-decoration: none;
+  transition: all 0.4s ease;
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  border-radius: 50%;
+  background: rgba(212, 175, 55, 0.1);
+  border: 2px solid rgba(212, 175, 55, 0.3);
 }
 
 .social-icon:hover {
-  color: #ffffff;
+  color: #f4d03f;
+  background: rgba(212, 175, 55, 0.2);
+  transform: translateY(-5px) scale(1.1);
+  box-shadow: 0 8px 25px rgba(212, 175, 55, 0.4);
+  border-color: rgba(212, 175, 55, 0.6);
 }
 
 .copyright {
+  color: #d4af37;
   font-size: 0.9rem;
-  color: #aaa;
+  opacity: 0.7;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }

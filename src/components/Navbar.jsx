@@ -13,7 +13,7 @@ const Navbar = () => (
       <Link to="/movies" className="nav-link">Movies</Link>
       <Link to="/" className="nav-link brand">MUKAMA</Link>
       <Link to="/tvshows" className="nav-link">TV Shows</Link>
-      <Link to="/blogs" className="nav-link">Blog</Link>
+     
       <Link to="/news" className="nav-link">News</Link>
       <Link to="/press" className="nav-link">Press</Link>
       <Link to="/events" className="nav-link">Events</Link>

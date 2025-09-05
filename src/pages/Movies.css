@@ -4,7 +4,7 @@
   background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
   position: relative;
   overflow: hidden;
-  font-family: Arial, sans-serif;
+  /* font-family: Arial, sans-serif; */
   padding-bottom: 5rem;
 }
 
@@ -29,12 +29,12 @@
 }
 
 .movies-container {
-  max-width: 1200px;
+  width:1220px;
   margin: 0 auto;
   padding: 4rem 2rem;
   position: relative;
   z-index: 2;
-}
+} 
 
 /* Page Title */
 .page-title {
@@ -91,7 +91,7 @@
   transition: transform 0.3s ease;
   padding: 2rem;
   margin-bottom: 3rem;
-}
+} 
 
 .movie-card:hover {
   transform: translateY(-5px);
@@ -287,4 +287,56 @@
     height: 40px;
     line-height: 40px;
   }
+}
+
+/* Active category button */
+.category-btn.active {
+  background: linear-gradient(45deg, #f4d03f, #d4af37, #f4d03f);
+  color: #000;
+  box-shadow: 0 6px 20px rgba(212, 175, 55, 0.7);
+}
+
+/* No movies message */
+.no-movies {
+  text-align: center;
+  color: #d4af37;
+  font-size: 1.2rem;
+  margin-top: 2rem;
+}
+
+/* Cartoon & Series video cards styled like Press */
+.movie-video-card {
+  max-width: 700px; /* narrower than full movie card */
+  margin: 0 auto 2rem auto; /* center and add spacing */
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  padding: 1.5rem;
+  border: 1px solid rgba(212, 175, 55, 0.2);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.movie-video-card iframe {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.movie-video-card .watch-btn {
+  display: block;
+  margin: 0 auto; /* center button */
+  background: #8b7355;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.movie-video-card .watch-btn:hover {
+  background: #a0856b;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(139, 115, 85, 0.3);
 }
