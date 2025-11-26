@@ -1,3 +1,8 @@
+
+Official website for Ntare School, showcasing information and updates.  
+Provides easy access to news, events, and resources.  
+Responsive design for all devices.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
